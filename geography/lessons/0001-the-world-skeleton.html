@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 0001 · The World Skeleton</title>
+<style>
+  :root{
+    --ink:#111;--paper:#fffff8;--muted:#6b6657;--rule:#d9d4c4;--accent:#7a1f12;
+    --good:#1f6b34;--bad:#9a2417;--chip:#f1ecda;
+  }
+  *{box-sizing:border-box}
+  html{font-size:18px}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    line-height:1.58;margin:0;padding:3rem 1.4rem 5rem;
+  }
+  .wrap{max-width:42rem;margin:0 auto}
+  .kicker{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 .35rem}
+  h1{font-size:2.2rem;font-weight:400;margin:0 0 .3rem;line-height:1.08}
+  .sub{color:var(--muted);font-style:italic;margin:0 0 2.2rem;font-size:1.05rem}
+  h2{font-size:1.25rem;font-weight:400;margin:2.8rem 0 .5rem;color:var(--accent)}
+  p{margin:.7rem 0}
+  .lede{font-size:1.06rem}
+  strong{font-weight:700}
+  .frame{background:#fbf7e9;border:1px solid var(--rule);border-radius:.5rem;padding:1rem 1.2rem;margin:1.4rem 0}
+  .frame h3{margin:.1rem 0 .5rem;font-size:.95rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  ol.cont{margin:.4rem 0;padding-left:1.4rem}
+  ol.cont li{margin:.3rem 0}
+  ol.cont b{font-weight:700}
+  .small{font-size:.9rem;color:var(--muted)}
+  .cover{border-left:3px solid var(--accent);padding:.2rem 0 .2rem 1rem;margin:1.4rem 0;font-style:italic;color:#333}
+
+  /* quiz */
+  .quiz{margin-top:1rem}
+  .q{border:1px solid var(--rule);border-radius:.6rem;padding:1.1rem 1.2rem;margin:1rem 0;background:#fff}
+  .q .qt{font-weight:700;margin:0 0 .7rem}
+  .opt{display:block;width:100%;text-align:left;font:inherit;font-size:.97rem;
+       background:var(--paper);border:1px solid var(--rule);border-radius:.4rem;
+       padding:.55rem .8rem;margin:.35rem 0;cursor:pointer;transition:.12s}
+  .opt:hover{border-color:#b9b29c}
+  .opt:disabled{cursor:default;opacity:1}
+  .opt.correct{background:#e7f3ea;border-color:var(--good);color:var(--good);font-weight:700}
+  .opt.wrong{background:#f7e7e4;border-color:var(--bad);color:var(--bad)}
+  .fb{font-size:.9rem;margin:.5rem 0 0;min-height:1.1rem}
+  .fb.ok{color:var(--good)}.fb.no{color:var(--bad)}
+  #score{margin-top:1.4rem;font-size:1.05rem;font-weight:700;text-align:center;min-height:1.4rem}
+
+  .cta{background:var(--accent);color:#fff;display:inline-block;text-decoration:none;
+       padding:.55rem 1rem;border-radius:.4rem;font-size:.95rem;margin-top:.4rem}
+  .ask{background:#fbf7e9;border:1px dashed #c9b8a0;border-radius:.5rem;padding:1rem 1.2rem;margin:2.4rem 0 0}
+  footer{margin-top:2.6rem;border-top:1px solid var(--rule);padding-top:1rem;font-size:.85rem;color:var(--muted)}
+  a{color:var(--accent)}
+  nav.links a{margin-right:1rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Lesson 0001 · Practical World Geography</p>
+  <h1>The World Skeleton</h1>
+  <p class="sub">Before any region makes sense, you need the frame it hangs on: 7 continents and 5 oceans.</p>
+
+  <p class="lede">You told me the continents feel fuzzy. That's the right place to start — because
+  every country you'll ever read about in the news lives <em>inside</em> one of seven continents,
+  touching one of five oceans. Get this skeleton solid and you'll never again hear a place named
+  and have <em>no idea</em> which part of the world it's in. That alone closes most of the gap.</p>
+
+  <h2>The 7 continents — biggest to smallest</h2>
+  <p>Don't memorise this as a list. Picture a world map and place them. Size order is worth
+  knowing because it tells you where the people and the news are.</p>
+  <div class="frame">
+    <h3>Largest → smallest</h3>
+    <ol class="cont">
+      <li><b>Asia</b> — the giant. East half of the big landmass. China, India, the Middle East, most of Russia.</li>
+      <li><b>Africa</b> — south across the Mediterranean from Europe. Sits on the equator.</li>
+      <li><b>North America</b> — top-left of the map. USA, Canada, Mexico.</li>
+      <li><b>South America</b> — hangs below North America. Brazil is most of it.</li>
+      <li><b>Antarctica</b> — the frozen bottom. No countries, just research bases.</li>
+      <li><b>Europe</b> — the crowded north-west corner of the big landmass. "The West."</li>
+      <li><b>Australia / Oceania</b> — the smallest. Bottom-right, in the Pacific.</li>
+    </ol>
+  </div>
+  <p><strong>The one idea that ties it together:</strong> Asia, Europe and Africa are all one
+  connected landmass — the "Old World." The Americas are a separate strip down the left.
+  Australia and Antarctica float at the bottom. That's the whole planet in one sentence.</p>
+
+  <h2>The 5 oceans — biggest to smallest</h2>
+  <div class="frame">
+    <h3>Largest → smallest</h3>
+    <ol class="cont">
+      <li><b>Pacific</b> — the huge one between Asia and the Americas.</li>
+      <li><b>Atlantic</b> — between the Americas and Europe/Africa (the one you fly across to the US).</li>
+      <li><b>Indian</b> — south of Asia, between Africa and Australia.</li>
+      <li><b>Southern</b> — the ring of water around Antarctica.</li>
+      <li><b>Arctic</b> — the frozen cap around the North Pole.</li>
+    </ol>
+  </div>
+
+  <h2>Cover and recall</h2>
+  <p class="cover">Look away from the screen. Out loud, name the 7 continents from biggest to
+  smallest, then the 5 oceans. Stuck on one? That's exactly the gap worth closing — glance back,
+  then try again from the top. Retrieving it from memory is what makes it stick; re-reading does not.</p>
+
+  <h2>Check yourself</h2>
+  <p class="small">Answer from memory. You'll get instant feedback on each.</p>
+  <div class="quiz" id="quiz"></div>
+  <div id="score"></div>
+
+  <h2>Your drill — make it automatic</h2>
+  <p>This lesson gave you the knowledge. Now burn it in with 5 minutes of clicking on the real map.
+  Open the Seterra continents-and-oceans quiz and play until you can place all twelve without a miss.</p>
+  <p><a class="cta" href="https://www.geoguessr.com/quiz/seterra" target="_blank" rel="noopener">▶ Drill on Seterra</a>
+  <span class="small">&nbsp;(search "Continents" or "Oceans" — it's the gold-standard free tool)</span></p>
+  <p class="small">Primary source for ground-truth facts and maps:
+  <a href="https://www.cia.gov/the-world-factbook/" target="_blank" rel="noopener">CIA World Factbook</a>.</p>
+
+  <div class="ask">
+    <strong>I'm your teacher — ask me anything.</strong> Confused why Russia counts as Europe
+    <em>and</em> Asia? Wondering where the Middle East fits, or why Greenland looks so huge on maps?
+    Ask me. A two-minute question now saves a wrong mental map later.
+  </div>
+
+  <footer>
+    <nav class="links">
+      <a href="../reference/world-skeleton.html">📄 Reference cheat-sheet</a>
+      <a href="../MISSION.md">🎯 Mission</a>
+    </nav>
+    <p>Next up: <strong>Europe — placing the countries.</strong> Region by region, starting with
+    the corner you'll hear about most in the news.</p>
+  </footer>
+</div>
+
+<script>
+const QUESTIONS = [
+  {
+    q: "Which is the largest continent?",
+    options: ["Africa", "Asia", "Europe", "North America"],
+    answer: 1,
+    ok: "Right — Asia, by far. It holds most of the world's people and most of the news.",
+    no: "It's Asia — the giant that holds China, India, the Middle East and most of Russia."
+  },
+  {
+    q: "Africa lies directly south of which continent, across the Mediterranean Sea?",
+    options: ["Asia", "Europe", "South America", "Australia"],
+    answer: 1,
+    ok: "Correct — Europe is just across the Mediterranean from Africa.",
+    no: "It's Europe — the Mediterranean Sea is the narrow gap between them."
+  },
+  {
+    q: "Which continent has no countries, only research bases?",
+    options: ["Australia", "Greenland", "Antarctica", "Siberia"],
+    answer: 2,
+    ok: "Yes — Antarctica, the frozen bottom of the map.",
+    no: "It's Antarctica. (Greenland and Siberia aren't continents; Australia is a country.)"
+  },
+  {
+    q: "Which is the largest ocean?",
+    options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+    answer: 2,
+    ok: "Right — the Pacific, sitting between Asia and the Americas.",
+    no: "It's the Pacific — the huge one between Asia and the Americas."
+  },
+  {
+    q: "Which ocean lies between the Americas and Europe/Africa?",
+    options: ["Pacific", "Indian", "Arctic", "Atlantic"],
+    answer: 3,
+    ok: "Correct — the Atlantic, the one you cross flying to the US.",
+    no: "It's the Atlantic — the ocean between the Americas and Europe/Africa."
+  },
+  {
+    q: "Asia, Europe and Africa share one feature. Which?",
+    options: ["They are one connected landmass", "They lie below the equator", "They have no coastline", "They are entirely islands"],
+    answer: 0,
+    ok: "Exactly — they're one connected 'Old World' landmass. That's the frame.",
+    no: "They are one connected landmass — the 'Old World'. The Americas are a separate strip."
+  }
+];
+
+const quizEl = document.getElementById('quiz');
+const scoreEl = document.getElementById('score');
+let answered = 0, correct = 0;
+
+QUESTIONS.forEach((item, qi) => {
+  const card = document.createElement('div');
+  card.className = 'q';
+  const title = document.createElement('p');
+  title.className = 'qt';
+  title.textContent = (qi + 1) + '. ' + item.q;
+  card.appendChild(title);
+
+  const fb = document.createElement('p');
+  fb.className = 'fb';
+
+  item.options.forEach((opt, oi) => {
+    const b = document.createElement('button');
+    b.className = 'opt';
+    b.textContent = opt;
+    b.onclick = () => {
+      if (b.disabled) return;
+      Array.from(card.querySelectorAll('.opt')).forEach(x => x.disabled = true);
+      answered++;
+      if (oi === item.answer) {
+        b.classList.add('correct'); correct++;
+        fb.textContent = item.ok; fb.className = 'fb ok';
+      } else {
+        b.classList.add('wrong');
+        card.querySelectorAll('.opt')[item.answer].classList.add('correct');
+        fb.textContent = item.no; fb.className = 'fb no';
+      }
+      if (answered === QUESTIONS.length) {
+        scoreEl.textContent = `You scored ${correct} / ${QUESTIONS.length}. ` +
+          (correct === QUESTIONS.length ? 'Skeleton solid — go drill it on Seterra, then come back for Europe.'
+           : 'Re-read the misses, then run the Seterra drill below until it sticks.');
+      }
+    };
+    card.appendChild(b);
+  });
+  card.appendChild(fb);
+  quizEl.appendChild(card);
+});
+</script>
+</body>
+</html>

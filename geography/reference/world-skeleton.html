@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reference · The World Skeleton</title>
+<style>
+  :root{
+    --ink:#111;--paper:#fffff8;--muted:#6b6657;--rule:#d9d4c4;--accent:#7a1f12;
+  }
+  *{box-sizing:border-box}
+  html{font-size:17px}
+  body{
+    background:var(--paper);color:var(--ink);
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;
+    line-height:1.5;margin:0;padding:3rem 1.4rem 4rem;
+  }
+  .wrap{max-width:46rem;margin:0 auto}
+  .kicker{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 .3rem}
+  h1{font-size:2rem;font-weight:400;margin:0 0 .2rem;line-height:1.1}
+  .sub{color:var(--muted);font-style:italic;margin:0 0 2rem}
+  h2{font-size:1.05rem;font-weight:700;margin:2.4rem 0 .6rem;border-bottom:1px solid var(--rule);padding-bottom:.3rem}
+  table{width:100%;border-collapse:collapse;margin:.4rem 0 1rem;font-size:.95rem}
+  th,td{text-align:left;padding:.42rem .5rem;vertical-align:top;border-bottom:1px solid var(--rule)}
+  th{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+  td.rank{font-variant-numeric:tabular-nums;color:var(--accent);font-weight:700;width:2.2rem}
+  td.name{font-weight:700;white-space:nowrap}
+  .note{font-size:.85rem;color:var(--muted)}
+  .pill{display:inline-block;background:#f1ecda;border-radius:1rem;padding:.05rem .55rem;font-size:.78rem;margin:.1rem .2rem .1rem 0}
+  footer{margin-top:3rem;border-top:1px solid var(--rule);padding-top:1rem;font-size:.82rem;color:var(--muted)}
+  a{color:var(--accent)}
+  @media print{body{padding:0}.wrap{max-width:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Quick Reference · Geography</p>
+  <h1>The World Skeleton</h1>
+  <p class="sub">7 continents and 5 oceans — the frame every other place hangs on.</p>
+
+  <h2>The 7 continents, largest to smallest</h2>
+  <table>
+    <thead><tr><th>#</th><th>Continent</th><th>Where it sits</th><th>News anchor</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">1</td><td class="name">Asia</td><td>East half of the big landmass; north of the Indian Ocean</td><td>China, India, Middle East, most of Russia</td></tr>
+      <tr><td class="rank">2</td><td class="name">Africa</td><td>South of Europe, across the Mediterranean; straddles the equator</td><td>Egypt, Nigeria, Sahel, South Africa</td></tr>
+      <tr><td class="rank">3</td><td class="name">North America</td><td>Top-left of a world map; west of the Atlantic</td><td>USA, Canada, Mexico</td></tr>
+      <tr><td class="rank">4</td><td class="name">South America</td><td>Below North America; mostly in the southern hemisphere</td><td>Brazil, Argentina, Venezuela</td></tr>
+      <tr><td class="rank">5</td><td class="name">Antarctica</td><td>The bottom of the map; the South Pole</td><td>No countries — research bases only</td></tr>
+      <tr><td class="rank">6</td><td class="name">Europe</td><td>North-west peninsula of the big landmass; "the West" + Russia's edge</td><td>EU, Ukraine, UK</td></tr>
+      <tr><td class="rank">7</td><td class="name">Australia / Oceania</td><td>Bottom-right; south-east of Asia, in the Pacific</td><td>Australia, New Zealand, Pacific islands</td></tr>
+    </tbody>
+  </table>
+  <p class="note"><strong>Frame trick:</strong> Asia + Europe + Africa are one connected "Old World" landmass. The Americas are a second strip on the left. Australia + Antarctica float at the bottom. Russia spans Europe <em>and</em> Asia; Egypt touches Africa <em>and</em> Asia — these are the famous "transcontinental" exceptions.</p>
+
+  <h2>The 5 oceans, largest to smallest</h2>
+  <table>
+    <thead><tr><th>#</th><th>Ocean</th><th>Where it is</th></tr></thead>
+    <tbody>
+      <tr><td class="rank">1</td><td class="name">Pacific</td><td>The giant one between Asia and the Americas. Biggest of all.</td></tr>
+      <tr><td class="rank">2</td><td class="name">Atlantic</td><td>Between the Americas and Europe/Africa. The one you cross flying to the US.</td></tr>
+      <tr><td class="rank">3</td><td class="name">Indian</td><td>South of Asia, between Africa and Australia.</td></tr>
+      <tr><td class="rank">4</td><td class="name">Southern</td><td>The ring of water around Antarctica.</td></tr>
+      <tr><td class="rank">5</td><td class="name">Arctic</td><td>The frozen cap at the top, around the North Pole.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Three orientation words</h2>
+  <p>
+    <span class="pill"><strong>Equator</strong> — the line round the middle</span>
+    <span class="pill"><strong>Northern hemisphere</strong> — above it (most land & people)</span>
+    <span class="pill"><strong>Southern hemisphere</strong> — below it</span>
+  </p>
+
+  <footer>
+    Source of truth: <a href="https://www.cia.gov/the-world-factbook/">CIA World Factbook</a>.
+    Drill this map at <a href="https://www.geoguessr.com/quiz/seterra">Seterra</a>.<br>
+    Companion lesson: <a href="../lessons/0001-the-world-skeleton.html">0001 · The World Skeleton</a>.
+  </footer>
+</div>
+</body>
+</html>
