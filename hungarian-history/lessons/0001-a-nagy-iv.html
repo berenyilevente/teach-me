@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecke 0001 — A nagy ív: a magyar történelem öt korszaka</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --paper:#fcfbf7; --rule:#d8d2c4; --accent:#7a2e1d; --muted:#6b6457;
+    --good:#2f6b3a; --bad:#9a2b2b; --chip:#f3efe4;
+  }
+  *{box-sizing:border-box;}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    line-height:1.6; margin:0; padding:3rem 1.25rem 4rem;
+  }
+  .wrap{max-width:42rem; margin:0 auto;}
+  .eyebrow{font-variant:small-caps; letter-spacing:.08em; color:var(--accent); font-size:.9rem; margin:0;}
+  h1{font-size:2rem; line-height:1.12; margin:.2rem 0 .5rem;}
+  .lede{color:var(--muted); font-style:italic; margin:0 0 1.5rem;}
+  h2{font-size:1.3rem; margin:2.2rem 0 .4rem; border-bottom:2px solid var(--rule); padding-bottom:.25rem;}
+  h3{font-size:1.08rem; margin:1.4rem 0 .2rem;}
+  .span{color:var(--accent); font-variant:small-caps; letter-spacing:.05em; font-size:.82rem; margin:0;}
+  p{margin:.5rem 0;}
+  .story{background:var(--chip); border-left:3px solid var(--accent); padding:.7rem 1rem; margin:1rem 0; border-radius:0 4px 4px 0;}
+  .map{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.95rem;}
+  .map td{padding:.5rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top;}
+  .map td:first-child{color:var(--accent); white-space:nowrap; font-feature-settings:"tnum"; width:8rem;}
+  .map td.n{font-weight:600; color:var(--accent); width:1.6rem; text-align:right;}
+  /* Quiz */
+  .quiz{margin:1rem 0 0;}
+  .q{border:1px solid var(--rule); border-radius:8px; padding:1rem 1.1rem; margin:1rem 0; background:#fff;}
+  .q .stem{font-weight:600; margin:0 0 .7rem;}
+  .opts{display:flex; flex-direction:column; gap:.45rem;}
+  .opts button{
+    font:inherit; text-align:left; padding:.55rem .8rem; border:1px solid var(--rule);
+    background:var(--paper); border-radius:6px; cursor:pointer; transition:.15s;
+  }
+  .opts button:hover{border-color:var(--accent);}
+  .opts button.correct{background:#e7f1e8; border-color:var(--good); color:var(--good);}
+  .opts button.wrong{background:#f6e7e7; border-color:var(--bad); color:var(--bad);}
+  .fb{margin:.6rem 0 0; font-size:.92rem; min-height:1.2em;}
+  .fb.ok{color:var(--good);} .fb.no{color:var(--bad);}
+  .order{display:flex; flex-direction:column; gap:.4rem; margin:.5rem 0;}
+  .order .slot{display:flex; align-items:center; gap:.6rem;}
+  .order select{font:inherit; padding:.35rem; border:1px solid var(--rule); border-radius:5px; background:#fff;}
+  .order .label{flex:1;}
+  .order .mark{width:1.4rem; text-align:center; font-weight:700;}
+  .checkbtn{font:inherit; margin-top:.6rem; padding:.5rem 1rem; border:1px solid var(--accent);
+    background:var(--accent); color:#fff; border-radius:6px; cursor:pointer;}
+  .score{font-weight:600; margin-top:.4rem;}
+  .callout{background:#eef3ee; border:1px solid #cfe0d0; border-radius:8px; padding:.9rem 1.1rem; margin:1.5rem 0;}
+  .callout b{color:var(--good);}
+  footer{margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.88rem;}
+  a{color:var(--accent);}
+  sup a{text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">Lecke 0001 · Magyar történelem</p>
+  <h1>A nagy ív</h1>
+  <p class="lede">Mielőtt bármilyen részletbe belemennénk, építünk egy fogast. Öt korszak —
+  ez az egész magyar történelem váza. Ha ez megvan, minden más név és esemény talál magának
+  helyet rajta.</p>
+
+  <h2>Miért pont öt?</h2>
+  <p>A pontos évszámok bemagolása unalmas és felesleges. Amire valójában szükséged van egy
+  beszélgetésben, az a <b>sorrend és a logika</b>: mi mire következett, és nagyjából mikor.
+  Ezért az egész történelmet öt nagy darabra vágjuk. Ezt az ötöt fogod fejből tudni a lecke
+  végén.</p>
+
+  <table class="map">
+    <tr><td class="n">1</td><td>Középkori Magyar Királyság</td><td>~895 – 1526</td></tr>
+    <tr><td class="n">2</td><td>Három részre szakadt ország + Habsburg-kor</td><td>1526 – 1848</td></tr>
+    <tr><td class="n">3</td><td>Polgári átalakulás és a Monarchia</td><td>1848 – 1918</td></tr>
+    <tr><td class="n">4</td><td>A „rövid 20. század"</td><td>1918 – 1989</td></tr>
+    <tr><td class="n">5</td><td>Szabad Magyarország</td><td>1989 –</td></tr>
+  </table>
+
+  <h2>Az öt korszak — egy-egy sztorival</h2>
+
+  <h3>1 · A királyság megszületik és virágzik</h3>
+  <p class="span">~895 – 1526 · több mint hat évszázad</p>
+  <p>A magyar törzsek a 9. század végén érkeznek a Kárpát-medencébe (honfoglalás, ~895).
+  Néhány nemzedék múlva I. István megkoronázásával (~1000) keresztény európai királyság lesz
+  belőlük. Ez a korszak adja a középkori csúcspontot is: <b>Hunyadi Mátyás</b> reneszánsz
+  udvarát az 1400-as évek végén. A korszakot a <b>mohácsi csatavesztés</b> (1526) zárja.</p>
+  <div class="story"><b>A sztori, amit megjegyzel:</b> egy lovas nomád törzsszövetségből
+  fél évezred alatt megbecsült keresztény királyság lesz — aztán egyetlen csatában (Mohács)
+  összeomlik.</div>
+
+  <h3>2 · Az ország három darabra törik</h3>
+  <p class="span">1526 – 1848 · a megosztottság évszázadai</p>
+  <p>Mohács után az ország három részre szakad: a nyugati-északi sáv a Habsburgoké, a középső
+  rész török hódoltság, keleten pedig az Erdélyi Fejedelemség. A törököt végül kiűzik
+  (Buda visszavétele, 1686 körül), de ezzel az egész ország a <b>Habsburgok</b> uralma alá kerül.
+  A függetlenségi vágy a Rákóczi-szabadságharcban robban ki (1700-as évek eleje).</p>
+  <div class="story"><b>A sztori:</b> másfél évszázadig egy kettéhasított ország őrlődik
+  két birodalom, a török és a Habsburg között.</div>
+
+  <h3>3 · Forradalom, majd a Monarchia fénykora</h3>
+  <p class="span">1848 – 1918 · a „hosszú 19. század"</p>
+  <p>1848. március 15-én kitör a forradalom (<b>Petőfi, Kossuth</b>), majd szabadságharc —
+  amit levernek. Ám alig két évtized múlva a <b>kiegyezés</b> (1867) megteremti az
+  <b>Osztrák–Magyar Monarchiát</b>: béke, gyors fejlődés, a „boldog békeidők". Ennek az első
+  világháború (1914–1918) vet véget.</p>
+  <div class="story"><b>A sztori:</b> előbb a lázadás bukása, aztán egy okos kompromisszum,
+  ami fél évszázad békét és fejlődést hoz.</div>
+
+  <h3>4 · Veszteség és diktatúra</h3>
+  <p class="span">1918 – 1989 · a „rövid 20. század"</p>
+  <p>A vesztes háború után a <b>trianoni békeszerződés</b> (1920) az ország területének és
+  lakosságának nagy részét elveszi — máig fájó pont. Jön a Horthy-kor, a második világháború,
+  majd a <b>kommunista diktatúra</b>. Ennek elnyomása ellen tör ki az <b>1956-os forradalom</b>,
+  amit szovjet tankok vernek le; utána a „puhább" Kádár-kor következik.</p>
+  <div class="story"><b>A sztori:</b> Trianon a seb, 1956 a fellángolás. Egy század a
+  veszteségről és az elnyomásról.</div>
+
+  <h3>5 · Szabadság és Európa</h3>
+  <p class="span">1989 – napjainkig</p>
+  <p>1989–90-ben békésen összeomlik a kommunizmus: <b>rendszerváltás</b>, többpárti demokrácia,
+  piacgazdaság. Magyarország a NATO (1999), majd az <b>Európai Unió</b> (2004) tagja lesz.</p>
+  <div class="story"><b>A sztori:</b> lehull a vasfüggöny, és az ország visszatér a nyugati
+  demokráciák közé.</div>
+
+  <h2>Próbáld ki — kvíz</h2>
+  <p>Ne lapozz vissza. A küzdés a memóriáddal pont az, amitől megmarad. A válaszokra
+  azonnali visszajelzést kapsz.</p>
+
+  <div class="quiz">
+    <div class="q" data-correct="1">
+      <p class="stem">1. Melyik esemény zárja le a Középkori Magyar Királyság korszakát?</p>
+      <div class="opts">
+        <button>A kiegyezés megkötése</button>
+        <button>A mohácsi csatavesztés</button>
+        <button>A trianoni szerződés</button>
+        <button>A rendszerváltás éve</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="2">
+      <p class="stem">2. Mi jött létre a kiegyezéssel (1867)?</p>
+      <div class="opts">
+        <button>Az önálló magyar köztársaság</button>
+        <button>Az erdélyi különálló fejedelemség</button>
+        <button>Az Osztrák–Magyar Monarchia</button>
+        <button>A független magyar királyság</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="0">
+      <p class="stem">3. Melyik korszakhoz kötődik Trianon és 1956?</p>
+      <div class="opts">
+        <button>A „rövid 20. század"</button>
+        <button>A Monarchia fénykora</button>
+        <button>A három részre szakadás</button>
+        <button>A királyság virágkora</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="3">
+      <p class="stem">4. Két birodalom közt őrlődő, három részre szakadt ország — melyik ez?</p>
+      <div class="opts">
+        <button>A szabad Magyarország kora</button>
+        <button>A polgári átalakulás kora</button>
+        <button>A királyság születésének kora</button>
+        <button>A Habsburg- és törökkor</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+  </div>
+
+  <h3>Tedd helyes sorrendbe</h3>
+  <p>Állítsd időrendbe a korszakokat (1 = legrégebbi):</p>
+  <div class="order" id="order">
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="A"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <span class="label">Polgári átalakulás és a Monarchia</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="B"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <span class="label">Szabad Magyarország (rendszerváltás után)</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="C"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <span class="label">Középkori Magyar Királyság</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="D"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <span class="label">A „rövid 20. század" (Trianon, háborúk, 1956)</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="E"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+      <span class="label">Három részre szakadt ország + Habsburg-kor</span></div>
+  </div>
+  <button class="checkbtn" id="checkorder">Ellenőrzés</button>
+  <p class="score" id="orderscore"></p>
+
+  <div class="callout">
+    <b>Egy kérdés, amin érdemes elgondolkodni:</b> a magyar történelemben feltűnően gyakran
+    ismétlődik egy minta — felemelkedés, majd egy nagy bukás (Mohács, a szabadságharc bukása,
+    Trianon, 1956). Vajon véletlen, vagy a Kárpát-medence földrajzi-hatalmi helyzetéből fakad?
+    Erről jó beszélgetni — kérdezz nyugodtan tőlem, a tanárodtól!
+  </div>
+
+  <h2>Olvasnivaló — egy elsődleges forrás</h2>
+  <p>Ha egyetlen dolgot olvasol a teljes ívről, legyen <b>Romsics Ignác: <i>Magyarország
+  története</i></b> — egyetlen kötetben, olvasmányosan, kifejezetten az érdeklődő közönségnek
+  (<a href="https://moly.hu/konyvek/romsics-ignac-szerk-magyarorszag-tortenete">adatlap</a>).
+  Gyors online kiindulásnak pedig a
+  <a href="https://rubicon.hu/hu/korszakok">Rubicon Online — Korszakok</a> oldal.</p>
+
+  <footer>
+    Kapcsolódó: <a href="../reference/idovonal.html">Referencia — A magyar történelem nagy íve</a>
+    (ezt nyomtasd ki / mentsd el, ehhez térj vissza).<br>
+    Források: Romsics Ignác, <i>Magyarország története</i>;
+    <a href="https://rubicon.hu/hu/korszakok">Rubicon Online</a>. Az évszámok kerekítettek.<br>
+    <b>Akadt kérdésed?</b> Én vagyok a tanárod — kérdezz bármit, ami nem világos, vagy amit
+    mélyebben szeretnél érteni. A következő leckében közelebbről megnézzük az 1. korszakot:
+    a honfoglalást és az államalapítást.
+  </footer>
+</div>
+
+<script>
+  // Feleletválasztós
+  document.querySelectorAll('.q').forEach(function(q){
+    var correct = +q.dataset.correct;
+    var btns = q.querySelectorAll('.opts button');
+    var fb = q.querySelector('.fb');
+    btns.forEach(function(b,i){
+      b.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = "1";
+        btns[correct].classList.add('correct');
+        if(i===correct){ fb.textContent = "Pontosan! ✓"; fb.className = "fb ok"; }
+        else { b.classList.add('wrong'); fb.textContent = "Nem ez — a kiemelt válasz a helyes."; fb.className = "fb no"; }
+      });
+    });
+  });
+
+  // Sorrend: helyes = A3 B5 C1 D4 E2
+  var KEY = {A:"3",B:"5",C:"1",D:"4",E:"2"};
+  document.getElementById('checkorder').addEventListener('click', function(){
+    var sels = document.querySelectorAll('#order select');
+    var ok=0, total=sels.length;
+    sels.forEach(function(s){
+      var slot = s.closest('.slot'); var mark = slot.querySelector('.mark');
+      if(s.value === KEY[s.dataset.pos]){ ok++; mark.textContent="✓"; mark.style.color="#2f6b3a"; }
+      else { mark.textContent="✗"; mark.style.color="#9a2b2b"; }
+    });
+    var el = document.getElementById('orderscore');
+    el.textContent = ok+" / "+total + (ok===total ? " — tökéletes sorrend! 🎉" : " — nézd meg a ✗-eket és próbáld újra.");
+    el.style.color = ok===total ? "#2f6b3a" : "#7a2e1d";
+  });
+</script>
+</body>
+</html>

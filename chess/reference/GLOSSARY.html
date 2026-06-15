@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chess Glossary — Reference</title>
+<style>
+  :root{
+    --ink:#2b2722; --muted:#6b6258; --rule:#d8cfc2; --bg:#fbf8f3;
+    --accent:#7a4a2b; --chip:#efe7da;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    line-height:1.5; margin:0; padding:3rem 1.2rem 5rem;
+  }
+  .wrap{max-width:760px; margin:0 auto}
+  .kicker{font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 .3rem}
+  h1{font-size:2.1rem; line-height:1.1; margin:0 0 .4rem; font-weight:600}
+  .lede{color:var(--muted); font-style:italic; margin:0 0 2rem; font-size:1.02rem}
+  h2{font-size:1.05rem; letter-spacing:.04em; text-transform:uppercase; color:var(--accent);
+     border-bottom:1px solid var(--rule); padding-bottom:.35rem; margin:2.4rem 0 1rem}
+  dl{margin:0}
+  dt{font-weight:600; margin-top:1.1rem}
+  dd{margin:.15rem 0 0; color:#3f3a33}
+  dd .ex{color:var(--muted); font-style:italic}
+  .pieces{display:flex; flex-wrap:wrap; gap:.5rem; margin:.6rem 0 0; padding:0; list-style:none}
+  .pieces li{background:var(--chip); border:1px solid var(--rule); border-radius:6px;
+     padding:.35rem .6rem; font-size:.95rem}
+  .pieces b{font-size:1.1rem}
+  footer{margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule);
+     color:var(--muted); font-size:.86rem}
+  a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Reference · keep this open while you play</p>
+  <h1>Chess Glossary</h1>
+  <p class="lede">The shared vocabulary for every lesson in this workspace. Terms here are used
+  with these exact meanings throughout. Revisit it often — recognising the <em>name</em> of a
+  pattern is the first step to spotting it on the board.</p>
+
+  <h2>Material — what the pieces are worth</h2>
+  <p>A rough trading scale. Use it to answer "is this capture good for me?"</p>
+  <ul class="pieces">
+    <li><b>♟</b> Pawn = 1</li>
+    <li><b>♞</b> Knight = 3</li>
+    <li><b>♝</b> Bishop = 3</li>
+    <li><b>♜</b> Rook = 5</li>
+    <li><b>♛</b> Queen = 9</li>
+    <li><b>♚</b> King = ∞ (game over)</li>
+  </ul>
+
+  <h2>Blunders & safety</h2>
+  <dl>
+    <dt>Blunder</dt>
+    <dd>A serious mistake that loses material or the game — most often, leaving a piece
+      where it can be captured for free. The thing we are training to eliminate first.</dd>
+    <dt>Hanging piece</dt>
+    <dd>A piece that is attacked and <em>not defended</em> — it can be taken for free.
+      <span class="ex">Your job every move: make sure none of yours is hanging.</span></dd>
+    <dt>En prise</dt>
+    <dd>French for "in take" — a piece left undefended and capturable. Same idea as hanging.</dd>
+    <dt>CCT — Checks, Captures, Threats</dt>
+    <dd>The scan you run on <em>your opponent's</em> options (and your own): what Checks,
+      Captures, and Threats exist in the position right now. The backbone of the Blunder-Check.</dd>
+  </dl>
+
+  <h2>Tactics (winning material by force)</h2>
+  <dl>
+    <dt>Fork</dt>
+    <dd>One piece attacks two (or more) targets at once. Knights fork famously.</dd>
+    <dt>Pin</dt>
+    <dd>A piece can't move because a more valuable piece sits behind it on the same line.</dd>
+    <dt>Skewer</dt>
+    <dd>Like a pin reversed: the valuable piece is in front and must move, exposing the one behind.</dd>
+    <dt>Discovered attack</dt>
+    <dd>Moving one piece unveils an attack from a piece behind it. A <em>discovered check</em>
+      is the nastiest version.</dd>
+  </dl>
+
+  <h2>Opening & general terms</h2>
+  <dl>
+    <dt>Development</dt>
+    <dd>Getting your knights and bishops off the back rank into active squares. Castle early.</dd>
+    <dt>Tempo</dt>
+    <dd>A unit of time = one move. You "gain a tempo" when you make a useful move that also
+      forces your opponent to react.</dd>
+    <dt>Castling</dt>
+    <dd>King + rook move that tucks the king to safety. Do it early unless there's a reason not to.</dd>
+    <dt>En passant</dt>
+    <dd>Special pawn capture: if an enemy pawn jumps two squares past your pawn, you may
+      capture it as if it moved one — but only immediately.</dd>
+  </dl>
+
+  <h2>Endgame terms (for later)</h2>
+  <dl>
+    <dt>Opposition</dt>
+    <dd>Kings face each other with one square between them; the player <em>not</em> to move
+      "has the opposition" and controls key squares. Vital in king-and-pawn endings.</dd>
+    <dt>Promotion</dt>
+    <dd>A pawn reaching the far rank becomes a queen (usually). The point of most endgames.</dd>
+  </dl>
+
+  <footer>
+    Part of your chess teaching workspace · see the
+    <a href="../lessons/0001-the-blunder-check-routine.html">lessons</a> ·
+    Ask your teacher (me) to add or clarify any term.
+  </footer>
+</div>
+</body>
+</html>

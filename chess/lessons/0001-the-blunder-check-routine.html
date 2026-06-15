@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 1 — The Blunder-Check Routine</title>
+<style>
+  :root{
+    --ink:#2b2722; --muted:#6b6258; --rule:#d8cfc2; --bg:#fbf8f3;
+    --accent:#7a4a2b; --chip:#efe7da; --good:#2f6b3a; --goodbg:#e4f0e2;
+    --bad:#9a3b2e; --badbg:#f4e2dd; --card:#fff;
+  }
+  *{box-sizing:border-box}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    line-height:1.58; margin:0; padding:3rem 1.2rem 5rem;
+  }
+  .wrap{max-width:720px; margin:0 auto}
+  .kicker{font-size:.78rem; letter-spacing:.18em; text-transform:uppercase; color:var(--muted); margin:0 0 .3rem}
+  h1{font-size:2.2rem; line-height:1.12; margin:0 0 .5rem; font-weight:600}
+  .lede{font-size:1.12rem; color:#433d35; margin:0 0 .4rem}
+  .why{background:var(--chip); border-left:3px solid var(--accent); padding:.9rem 1.1rem;
+       margin:1.6rem 0; font-size:1rem}
+  h2{font-size:1.05rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent);
+     border-bottom:1px solid var(--rule); padding-bottom:.35rem; margin:2.6rem 0 1rem}
+  p{margin:.7rem 0}
+  .steps{counter-reset:s; list-style:none; padding:0; margin:1.2rem 0}
+  .steps li{position:relative; padding:.85rem 1rem .85rem 3.4rem; background:var(--card);
+     border:1px solid var(--rule); border-radius:10px; margin:.6rem 0}
+  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:.9rem; top:.85rem;
+     width:1.7rem; height:1.7rem; background:var(--accent); color:#fff; border-radius:50%;
+     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.95rem}
+  .steps b{display:block; font-size:1.05rem}
+  .steps span{color:var(--muted); font-size:.97rem}
+  .mnemonic{text-align:center; font-size:1.25rem; margin:1.4rem 0; letter-spacing:.02em}
+  .mnemonic b{color:var(--accent)}
+  .ex{background:var(--card); border:1px solid var(--rule); border-radius:10px; padding:1rem 1.2rem; margin:1.2rem 0}
+  .ex p{margin:.45rem 0}
+  .move{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace; background:var(--chip);
+     padding:.05rem .35rem; border-radius:4px; font-size:.92em}
+  /* quiz */
+  .q{background:var(--card); border:1px solid var(--rule); border-radius:12px;
+     padding:1.1rem 1.2rem; margin:1.1rem 0}
+  .q .stem{font-weight:600; margin:0 0 .8rem}
+  .opt{display:block; width:100%; text-align:left; font:inherit; cursor:pointer;
+     background:var(--bg); border:1px solid var(--rule); border-radius:8px;
+     padding:.6rem .8rem; margin:.4rem 0; transition:.12s}
+  .opt:hover{border-color:var(--accent)}
+  .opt.correct{background:var(--goodbg); border-color:var(--good); color:var(--good); font-weight:600}
+  .opt.wrong{background:var(--badbg); border-color:var(--bad); color:var(--bad)}
+  .fb{margin:.6rem 0 0; font-size:.95rem; min-height:1.2rem}
+  .fb.good{color:var(--good)} .fb.bad{color:var(--bad)}
+  .src{background:#27221d; color:#f3ece1; border-radius:12px; padding:1.2rem 1.3rem; margin:2rem 0}
+  .src h2{color:#e6b98a; border-color:#4a4138; margin-top:0}
+  .src a{color:#e6b98a}
+  .ask{border:1px dashed var(--accent); border-radius:10px; padding:1rem 1.2rem; margin:2rem 0;
+     background:var(--chip); font-size:1rem}
+  footer{margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.86rem}
+  a{color:var(--accent)}
+  .score{font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="kicker">Lesson 1 · The foundation · ~10 minutes</p>
+  <h1>The Blunder-Check Routine</h1>
+  <p class="lede">A tiny habit you run on <em>every</em> move so you stop giving pieces away —
+  the single fastest way to gain rating at your level.</p>
+
+  <div class="why">
+    <strong>Why this first, before openings?</strong> At 750–950, games are decided by who
+    hangs fewer pieces, not by who knows more opening theory. Your puzzle skill is probably
+    already higher than your game rating — that gap is blunders and lost focus, and it's
+    completely fixable with a routine. We start here because it pays off in your <em>next</em> game.
+  </div>
+
+  <h2>The routine — four checks, every move</h2>
+  <p>Most blunders happen because we react to our <em>own</em> plan and forget the board is
+  shared. The fix is a fixed loop you run before you ever touch a piece:</p>
+
+  <ol class="steps">
+    <li><b>Threat?</b><span>Your opponent just moved — what did it <em>attack</em>? Look at their
+      <strong>C</strong>hecks, <strong>C</strong>aptures, and <strong>T</strong>hreats (CCT).
+      Ask: "What are they trying to do to me?"</span></li>
+    <li><b>Is my move safe?</b><span>Picture the move done. Can that piece be taken for free
+      on its new square? Did moving it <em>stop defending</em> something or open a line?</span></li>
+    <li><b>Scan all my pieces.</b><span>Quick sweep of the whole board: is <em>anything</em> of
+      mine now hanging (attacked and undefended)? Fix that before anything else.</span></li>
+    <li><b>My turn to attack.</b><span>Now look for <em>your</em> CCT — a check, a free capture,
+      a threat that wins material. Don't just be safe; grab what they left hanging.</span></li>
+  </ol>
+
+  <p class="mnemonic">Remember it as: <b>“What’s the threat — is my move safe — what’s free for me?”</b></p>
+  <p>The vocabulary here (<em>hanging</em>, <em>en prise</em>, <em>CCT</em>) lives in your
+  <a href="../reference/GLOSSARY.html">Glossary</a> — keep it open while you play.</p>
+
+  <h2>Watch the loop run</h2>
+  <div class="ex">
+    <p><strong>Position:</strong> Your opponent just played a bishop to <span class="move">b4</span>.</p>
+    <p><strong>1. Threat?</strong> That bishop now attacks your knight on <span class="move">c3</span>,
+      which is pinned to your king. CCT flags a real threat. ✔ noticed.</p>
+    <p><strong>2. Is my move safe?</strong> You were about to play <span class="move">Ne5</span> —
+      but the knight is pinned and can't legally move. Good thing you checked.</p>
+    <p><strong>3. Scan.</strong> Nothing else of yours is hanging.</p>
+    <p><strong>4. My turn?</strong> You can break the pin and develop with <span class="move">a3</span>
+      or <span class="move">Bd2</span>. Calm, no material lost.</p>
+    <p style="color:var(--muted);font-style:italic">Without the routine, you'd play Ne5 on
+      autopilot, notice it's illegal, grab something else fast — and that rushed mood is exactly
+      when the real blunder slips out.</p>
+  </div>
+
+  <h2>The focus half — beating autopilot</h2>
+  <p>A routine only works if you actually run it. Three habits make that automatic:</p>
+  <ul>
+    <li><strong>Sit on your hands.</strong> Don't touch a piece until you've decided and
+      run the check. The physical pause is the whole trick.</li>
+    <li><strong>Play rapid, not bullet, while learning.</strong> You can't build a thinking
+      habit in a 3-minute game. Train the routine in 10–15 minute games first; speed comes later.</li>
+    <li><strong>One breath on every opponent move.</strong> When they move, breathe once and
+      ask "what's the threat?" <em>before</em> you think about your own idea. Most missed captures
+      are missed because we never looked at their side of the board.</li>
+  </ul>
+
+  <h2>Now retrieve it — quick quiz</h2>
+  <p>Don't peek above. Pulling the answer from memory is what makes it stick. Score: <span class="score" id="score">0 / 4</span></p>
+
+  <div class="q" data-correct="0">
+    <p class="stem">1. How often should you run the blunder-check?</p>
+    <button class="opt">Before every move you make</button>
+    <button class="opt">Only when you sense danger</button>
+    <button class="opt">Once you reach a middlegame</button>
+    <button class="opt">After you lose a piece</button>
+    <p class="fb"></p>
+  </div>
+
+  <div class="q" data-correct="0">
+    <p class="stem">2. You want to play your bishop to c4. Black has a pawn on b5 that attacks c4,
+      and nothing of yours defends c4. Is Bc4 safe?</p>
+    <button class="opt">No — the pawn wins it</button>
+    <button class="opt">Yes — bishops belong there</button>
+    <button class="opt">No — it allows a check</button>
+    <button class="opt">Yes — nothing can capture</button>
+    <p class="fb"></p>
+  </div>
+
+  <div class="q" data-correct="2">
+    <p class="stem">3. Your opponent just moved. Which check do you run <em>first</em>, before
+      choosing your own plan?</p>
+    <button class="opt">Find my best development</button>
+    <button class="opt">Decide where to castle</button>
+    <button class="opt">What did that move threaten</button>
+    <button class="opt">Plan my own pawn breaks</button>
+    <p class="fb"></p>
+  </div>
+
+  <div class="q" data-correct="1">
+    <p class="stem">4. Step 4 says "my turn to attack." Your opponent left a rook on a square your
+      bishop attacks, defended by nothing. You should:</p>
+    <button class="opt">Keep calmly developing pieces</button>
+    <button class="opt">Capture the undefended rook</button>
+    <button class="opt">Castle your king to safety</button>
+    <button class="opt">Offer a quiet piece trade</button>
+    <p class="fb"></p>
+  </div>
+
+  <div class="src">
+    <h2>Primary source — watch this</h2>
+    <p>GM Aman Hambleton's <a href="https://www.youtube.com/playlist?list=PLkrL9SXJDsCQT5lExgB9bnPp7zEvegz0R">
+      “Building Habits” series</a> is the best thing you can watch for this mission: a grandmaster
+      deliberately plays from low ratings using strict, simple rules — don't hang pieces, always
+      check what's attacked, develop, trade when ahead. Watch one episode and notice how often he
+      pauses to ask "what does that move do?" That pause is the routine you just learned.</p>
+  </div>
+
+  <div class="ask">
+    <strong>I'm your teacher — ask me anything.</strong> Stuck on a position from one of your
+    games? Paste the moves (or describe it) and I'll walk the blunder-check with you. Not sure
+    what a term means, or want harder practice? Just ask.
+  </div>
+
+  <p><strong>Your homework before Lesson 2:</strong> play <em>two rapid games</em> (10+ minutes)
+  consciously running the four checks every move, out loud in your head. Then tell me how it went —
+  especially any move where the routine caught a blunder you'd otherwise have played.</p>
+
+  <footer>
+    Lesson 1 of your chess workspace · Next up: spotting the tactics you can now safely grab
+    (forks, pins, skewers) · See the <a href="../reference/GLOSSARY.html">Glossary</a>.
+  </footer>
+</div>
+
+<script>
+  document.querySelectorAll('.q').forEach(function(q){
+    var correct = +q.dataset.correct;
+    var opts = q.querySelectorAll('.opt');
+    var fb = q.querySelector('.fb');
+    opts.forEach(function(opt, i){
+      opt.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = "1";
+        opts[correct].classList.add('correct');
+        if(i === correct){
+          fb.textContent = "Correct — that's the habit.";
+          fb.className = "fb good";
+          window.__score = (window.__score||0)+1;
+        } else {
+          opt.classList.add('wrong');
+          fb.textContent = "Not quite — the green one is the move. Run the routine and see why.";
+          fb.className = "fb bad";
+        }
+        var total = document.querySelectorAll('.q').length;
+        document.getElementById('score').textContent = (window.__score||0)+" / "+total;
+      });
+    });
+  });
+</script>
+</body>
+</html>
