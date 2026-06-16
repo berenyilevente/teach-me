@@ -26,12 +26,12 @@
   h2{font-size:1.05rem; letter-spacing:.05em; text-transform:uppercase; color:var(--accent);
      border-bottom:1px solid var(--rule); padding-bottom:.35rem; margin:2.6rem 0 1rem}
   p{margin:.7rem 0}
-  .steps{counter-reset:s; list-style:none; padding:0; margin:1.2rem 0}
+  .steps{list-style:none; padding:0; margin:1.2rem 0}
   .steps li{position:relative; padding:.85rem 1rem .85rem 3.4rem; background:var(--card);
      border:1px solid var(--rule); border-radius:10px; margin:.6rem 0}
-  .steps li::before{counter-increment:s; content:counter(s); position:absolute; left:.9rem; top:.85rem;
+  .steps .num{position:absolute; left:.9rem; top:.85rem;
      width:1.7rem; height:1.7rem; background:var(--accent); color:#fff; border-radius:50%;
-     display:flex; align-items:center; justify-content:center; font-weight:700; font-size:.95rem}
+     text-align:center; line-height:1.7rem; font-weight:700; font-size:.95rem}
   .steps b{display:block; font-size:1.05rem}
   .steps span{color:var(--muted); font-size:.97rem}
   .mnemonic{text-align:center; font-size:1.25rem; margin:1.4rem 0; letter-spacing:.02em}
