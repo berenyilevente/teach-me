@@ -33,10 +33,11 @@
   .quiz{margin:1rem 0 0;}
   .q{border:1px solid var(--rule); border-radius:8px; padding:1rem 1.1rem; margin:1rem 0; background:#fff;}
   .q .stem{font-weight:600; margin:0 0 .7rem;}
-  .opts{display:flex; flex-direction:column; gap:.45rem;}
+  .opts{margin:.45rem 0;}
   .opts button{
+    display:block; width:100%; margin:.45rem 0;
     font:inherit; text-align:left; padding:.55rem .8rem; border:1px solid var(--rule);
-    background:var(--paper); border-radius:6px; cursor:pointer; transition:.15s;
+    background:var(--paper); border-radius:6px; cursor:pointer;
   }
   .opts button:hover{border-color:var(--accent);}
   .opts button.correct{background:#e7f1e8; border-color:var(--good); color:var(--good);}
