@@ -45,9 +45,9 @@ def subject_meta(subject: Path) -> tuple[str, str]:
 CSS = """
 :root{--ink:#2b2722;--muted:#564e44;--rule:#d8cfc2;--bg:#fbf8f3;--accent:#7a4a2b;--chip:#efe7da;--card:#fff}
 *{box-sizing:border-box}
-html{font-size:18px}
-body{background:var(--bg);color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.06rem;line-height:1.6;margin:0;padding:3rem 1.2rem 5rem}
-.wrap{max-width:720px;margin:0 auto}
+html{font-size:20px}
+body{background:var(--bg);color:var(--ink);font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;font-size:1.06rem;line-height:1.6;margin:0;padding:3rem .9rem 5rem}
+.wrap{max-width:48rem;margin:0 auto}
 .kicker{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 .3rem}
 h1{font-size:2.2rem;line-height:1.12;margin:0 0 .4rem;font-weight:600}
 .lede{font-size:1.1rem;color:#433d35;margin:0 0 2rem}
