@@ -119,72 +119,82 @@
   azonnali visszajelzést kapsz.</p>
 
   <div class="quiz">
-    <div class="q" data-correct="1">
+    <div class="q">
       <p class="stem">1. Melyik esemény zárja le a Középkori Magyar Királyság korszakát?</p>
-      <div class="opts">
-        <button>A kiegyezés megkötése</button>
-        <button>A mohácsi csatavesztés</button>
-        <button>A trianoni szerződés</button>
-        <button>A rendszerváltás éve</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>A kiegyezés megkötése</li>
+        <li>A mohácsi csatavesztés</li>
+        <li>A trianoni szerződés</li>
+        <li>A rendszerváltás éve</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>A mohácsi csatavesztés</b> (1526) — ez zárja az 1. korszakot.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="2">
+    <div class="q">
       <p class="stem">2. Mi jött létre a kiegyezéssel (1867)?</p>
-      <div class="opts">
-        <button>Az önálló magyar köztársaság</button>
-        <button>Az erdélyi különálló fejedelemség</button>
-        <button>Az Osztrák–Magyar Monarchia</button>
-        <button>A független magyar királyság</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Az önálló magyar köztársaság</li>
+        <li>Az erdélyi különálló fejedelemség</li>
+        <li>Az Osztrák–Magyar Monarchia</li>
+        <li>A független magyar királyság</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Az Osztrák–Magyar Monarchia</b>.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="0">
+    <div class="q">
       <p class="stem">3. Melyik korszakhoz kötődik Trianon és 1956?</p>
-      <div class="opts">
-        <button>A „rövid 20. század"</button>
-        <button>A Monarchia fénykora</button>
-        <button>A három részre szakadás</button>
-        <button>A királyság virágkora</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>A „rövid 20. század"</li>
+        <li>A Monarchia fénykora</li>
+        <li>A három részre szakadás</li>
+        <li>A királyság virágkora</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>A „rövid 20. század"</b> (1918–1989).</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="3">
+    <div class="q">
       <p class="stem">4. Két birodalom közt őrlődő, három részre szakadt ország — melyik ez?</p>
-      <div class="opts">
-        <button>A szabad Magyarország kora</button>
-        <button>A polgári átalakulás kora</button>
-        <button>A királyság születésének kora</button>
-        <button>A Habsburg- és törökkor</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>A szabad Magyarország kora</li>
+        <li>A polgári átalakulás kora</li>
+        <li>A királyság születésének kora</li>
+        <li>A Habsburg- és törökkor</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>A Habsburg- és törökkor</b> (1526–1848).</p>
+      </details>
     </div>
   </div>
 
   <h3>Tedd helyes sorrendbe</h3>
-  <p>Állítsd időrendbe a korszakokat (1 = legrégebbi):</p>
-  <div class="order" id="order">
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="A"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <span class="label">Polgári átalakulás és a Monarchia</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="B"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <span class="label">Szabad Magyarország (rendszerváltás után)</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="C"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <span class="label">Középkori Magyar Királyság</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="D"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <span class="label">A „rövid 20. század" (Trianon, háborúk, 1956)</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="E"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-      <span class="label">Három részre szakadt ország + Habsburg-kor</span></div>
-  </div>
-  <button class="checkbtn" id="checkorder">Ellenőrzés</button>
-  <p class="score" id="orderscore"></p>
+  <p>Próbáld fejből időrendbe rakni a korszakokat (1 = legrégebbi), aztán ellenőrizd:</p>
+  <ul class="opts">
+    <li>Polgári átalakulás és a Monarchia</li>
+    <li>Szabad Magyarország (rendszerváltás után)</li>
+    <li>Középkori Magyar Királyság</li>
+    <li>A „rövid 20. század" (Trianon, háborúk, 1956)</li>
+    <li>Három részre szakadt ország + Habsburg-kor</li>
+  </ul>
+  <details class="answer">
+    <summary>Mutasd a helyes sorrendet</summary>
+    <ol>
+      <li>Középkori Magyar Királyság (~895–1526)</li>
+      <li>Három részre szakadt ország + Habsburg-kor (1526–1848)</li>
+      <li>Polgári átalakulás és a Monarchia (1848–1918)</li>
+      <li>A „rövid 20. század" (1918–1989)</li>
+      <li>Szabad Magyarország (1989–)</li>
+    </ol>
+  </details>
 
   <div class="callout">
     <b>Egy kérdés, amin érdemes elgondolkodni:</b> a magyar történelemben feltűnően gyakran
