@@ -44,13 +44,11 @@
   .q{background:var(--card); border:1px solid var(--rule); border-radius:12px;
      padding:1.1rem 1.2rem; margin:1.1rem 0}
   .q .stem{font-weight:600; margin:0 0 .8rem}
-  .opt{display:block; width:100%; text-align:left; font:inherit; cursor:pointer;
-     background:var(--bg); border:1px solid var(--rule); border-radius:8px;
-     padding:.6rem .8rem; margin:.4rem 0}
-  .opt.correct{background:var(--goodbg); border-color:var(--good); color:var(--good); font-weight:600}
-  .opt.wrong{background:var(--badbg); border-color:var(--bad); color:var(--bad)}
-  .fb{margin:.6rem 0 0; font-size:.95rem; min-height:1.2rem}
-  .fb.good{color:var(--good)} .fb.bad{color:var(--bad)}
+  .opts{margin:.5rem 0; padding-left:1.4rem}
+  .opts li{margin:.3rem 0}
+  details.answer{margin:.6rem 0 0}
+  details.answer summary{cursor:pointer; color:var(--accent); font-weight:600}
+  details.answer p, details.answer ol{margin:.5rem 0 0}
   .src{background:var(--chip); border-left:3px solid var(--accent); border-radius:0 10px 10px 0;
      padding:1.1rem 1.3rem; margin:2rem 0}
   .src h2{color:var(--accent); border-color:var(--rule); margin-top:0}
