@@ -211,31 +211,5 @@
     (forks, pins, skewers) · See the <a href="../reference/GLOSSARY.html">Glossary</a>.
   </footer>
 </div>
-
-<script>
-  document.querySelectorAll('.q').forEach(function(q){
-    var correct = +q.dataset.correct;
-    var opts = q.querySelectorAll('.opt');
-    var fb = q.querySelector('.fb');
-    opts.forEach(function(opt, i){
-      opt.addEventListener('click', function(){
-        if(q.dataset.done) return;
-        q.dataset.done = "1";
-        opts[correct].classList.add('correct');
-        if(i === correct){
-          fb.textContent = "Correct — that's the habit.";
-          fb.className = "fb good";
-          window.__score = (window.__score||0)+1;
-        } else {
-          opt.classList.add('wrong');
-          fb.textContent = "Not quite — the green one is the move. Run the routine and see why.";
-          fb.className = "fb bad";
-        }
-        var total = document.querySelectorAll('.q').length;
-        document.getElementById('score').textContent = (window.__score||0)+" / "+total;
-      });
-    });
-  });
-</script>
 </body>
 </html>
