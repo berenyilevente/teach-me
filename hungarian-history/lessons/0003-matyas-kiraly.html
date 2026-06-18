@@ -113,69 +113,80 @@
   kapsz minden válaszra.</p>
 
   <div class="quiz">
-    <div class="q" data-correct="2">
+    <div class="q">
       <p class="stem">1. Ki tette Magyarországot keresztény királysággá? (0002)</p>
-      <div class="opts">
-        <button>Hunyadi Mátyás</button>
-        <button>Hunyadi János</button>
-        <button>Szent István</button>
-        <button>Árpád fejedelem</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Hunyadi Mátyás</li>
+        <li>Hunyadi János</li>
+        <li>Szent István</li>
+        <li>Árpád fejedelem</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Szent István</b> (~1000 körül).</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="1">
+    <div class="q">
       <p class="stem">2. Ki volt Mátyás híres törökverő apja?</p>
-      <div class="opts">
-        <button>Luxemburgi Zsigmond</button>
-        <button>Hunyadi János</button>
-        <button>Károly Róbert</button>
-        <button>Szent László</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Luxemburgi Zsigmond</li>
+        <li>Hunyadi János</li>
+        <li>Károly Róbert</li>
+        <li>Szent László</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Hunyadi János</b> — a nándorfehérvári diadal (1456) hőse.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="0">
+    <div class="q">
       <p class="stem">3. Mi volt a Bibliotheca Corviniana?</p>
-      <div class="opts">
-        <button>Mátyás híres könyvtára</button>
-        <button>Mátyás zsoldos hadserege</button>
-        <button>Egy ostromlott végvár</button>
-        <button>Egy itáliai festő</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Mátyás híres könyvtára</li>
+        <li>Mátyás zsoldos hadserege</li>
+        <li>Egy ostromlott végvár</li>
+        <li>Egy itáliai festő</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Mátyás híres könyvtára</b> — a kor egyik legnagyobb gyűjteménye.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="3">
+    <div class="q">
       <p class="stem">4. Melyik csatavesztés zárja le hamarosan az 1. korszakot? (0001)</p>
-      <div class="opts">
-        <button>A nándorfehérvári diadal</button>
-        <button>Az augsburgi vereség</button>
-        <button>A trianoni szerződés</button>
-        <button>A mohácsi csatavesztés</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>A nándorfehérvári diadal</li>
+        <li>Az augsburgi vereség</li>
+        <li>A trianoni szerződés</li>
+        <li>A mohácsi csatavesztés</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>A mohácsi csatavesztés</b> (1526).</p>
+      </details>
     </div>
   </div>
 
   <h3>Tedd helyes sorrendbe</h3>
-  <p>Állítsd időrendbe az eseményeket (1 = legrégebbi):</p>
-  <div class="order" id="order">
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="A"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Hunyadi János nándorfehérvári diadala</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="B"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Szent István megkoronázása (~1000)</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="C"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Mátyás trónra lép, kezdődik a fénykor</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="D"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Az Árpád-ház kihalása (1301)</span></div>
-  </div>
-  <button class="checkbtn" id="checkorder">Ellenőrzés</button>
-  <p class="score" id="orderscore"></p>
+  <p>Próbáld fejből időrendbe rakni az eseményeket (1 = legrégebbi), aztán ellenőrizd:</p>
+  <ul class="opts">
+    <li>Hunyadi János nándorfehérvári diadala</li>
+    <li>Szent István megkoronázása (~1000)</li>
+    <li>Mátyás trónra lép, kezdődik a fénykor</li>
+    <li>Az Árpád-ház kihalása (1301)</li>
+  </ul>
+  <details class="answer">
+    <summary>Mutasd a helyes sorrendet</summary>
+    <ol>
+      <li>Szent István megkoronázása (~1000)</li>
+      <li>Az Árpád-ház kihalása (1301)</li>
+      <li>Hunyadi János nándorfehérvári diadala (1456)</li>
+      <li>Mátyás trónra lép, kezdődik a fénykor (1458)</li>
+    </ol>
+  </details>
 
   <div class="callout">
     <b>Egy kérdés, amin érdemes elgondolkodni:</b> Mátyás óriási, modern sereget és ragyogó
