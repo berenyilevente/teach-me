@@ -35,17 +35,12 @@
   /* quiz */
   .quiz{margin-top:1rem}
   .q{border:1px solid var(--rule);border-radius:.6rem;padding:1.1rem 1.2rem;margin:1rem 0;background:#fff}
-  .q .qt{font-weight:700;margin:0 0 .7rem}
-  .opt{display:block;width:100%;text-align:left;font:inherit;font-size:.97rem;
-       background:var(--paper);border:1px solid var(--rule);border-radius:.4rem;
-       padding:.55rem .8rem;margin:.35rem 0;cursor:pointer}
-  .opt:hover{border-color:#b9b29c}
-  .opt:disabled{cursor:default;opacity:1}
-  .opt.correct{background:#e7f3ea;border-color:var(--good);color:var(--good);font-weight:700}
-  .opt.wrong{background:#f7e7e4;border-color:var(--bad);color:var(--bad)}
-  .fb{font-size:.9rem;margin:.5rem 0 0;min-height:1.1rem}
-  .fb.ok{color:var(--good)}.fb.no{color:var(--bad)}
-  #score{margin-top:1.4rem;font-size:1.05rem;font-weight:700;text-align:center;min-height:1.4rem}
+  .q .stem{font-weight:700;margin:0 0 .7rem}
+  .opts{margin:.5rem 0;padding-left:1.4rem}
+  .opts li{margin:.3rem 0}
+  details.answer{margin:.6rem 0 0}
+  details.answer summary{cursor:pointer;color:var(--accent);font-weight:700}
+  details.answer p, details.answer ol{margin:.5rem 0 0}
 
   .cta{background:var(--accent);color:#fff;display:inline-block;text-decoration:none;
        padding:.55rem 1rem;border-radius:.4rem;font-size:.95rem;margin-top:.4rem}
