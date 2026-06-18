@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecke 0003 — A csúcspont: Hunyadi Mátyás és a reneszánsz udvar</title>
+<style>
+  :root{
+    --ink:#1a1a1a; --paper:#fcfbf7; --rule:#d8d2c4; --accent:#7a2e1d; --muted:#565043;
+    --good:#2f6b3a; --bad:#9a2b2b; --chip:#f3efe4;
+  }
+  *{box-sizing:border-box;}
+  html{font-size:125%}
+  body{
+    background:var(--paper); color:var(--ink);
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    font-size:1.06rem; line-height:1.6; margin:0; padding:3rem .9rem 4rem;
+  }
+  .wrap{max-width:48rem; margin:0 auto;}
+  .eyebrow{font-variant:small-caps; letter-spacing:.08em; color:var(--accent); font-size:.9rem; margin:0;}
+  h1{font-size:2rem; line-height:1.12; margin:.2rem 0 .5rem;}
+  .lede{color:var(--muted); font-style:italic; margin:0 0 1.5rem;}
+  h2{font-size:1.3rem; margin:2.2rem 0 .4rem; border-bottom:2px solid var(--rule); padding-bottom:.25rem;}
+  h3{font-size:1.08rem; margin:1.4rem 0 .2rem;}
+  .span{color:var(--accent); font-variant:small-caps; letter-spacing:.05em; font-size:.82rem; margin:0;}
+  p{margin:.5rem 0;}
+  .story{background:var(--chip); border-left:3px solid var(--accent); padding:.7rem 1rem; margin:1rem 0; border-radius:0 4px 4px 0;}
+  .recall{background:#eef3ee; border:1px solid #cfe0d0; border-radius:8px; padding:.9rem 1.1rem; margin:1.3rem 0;}
+  .recall .stem{font-weight:600; margin:.1rem 0 .6rem;}
+  .map{width:100%; border-collapse:collapse; margin:1rem 0; font-size:.95rem;}
+  .map td{padding:.5rem .6rem; border-bottom:1px solid var(--rule); vertical-align:top;}
+  .map td:first-child{color:var(--accent); white-space:nowrap; font-feature-settings:"tnum"; width:8rem;}
+  .map td.n{font-weight:600; color:var(--accent); width:1.6rem; text-align:right;}
+  /* Quiz */
+  .quiz{margin:1rem 0 0;}
+  .q{border:1px solid var(--rule); border-radius:8px; padding:1rem 1.1rem; margin:1rem 0; background:#fff;}
+  .q .stem{font-weight:600; margin:0 0 .7rem;}
+  .opts{margin:.45rem 0;}
+  .opts button{
+    display:block; width:100%; margin:.45rem 0;
+    font:inherit; text-align:left; padding:.55rem .8rem; border:1px solid var(--rule);
+    background:var(--paper); border-radius:6px; cursor:pointer;
+  }
+  .opts button:hover{border-color:var(--accent);}
+  .opts button.correct{background:#e7f1e8; border-color:var(--good); color:var(--good);}
+  .opts button.wrong{background:#f6e7e7; border-color:var(--bad); color:var(--bad);}
+  .fb{margin:.6rem 0 0; font-size:.92rem; min-height:1.2em;}
+  .fb.ok{color:var(--good);} .fb.no{color:var(--bad);}
+  .order{margin:.5rem 0;}
+  .order .slot{margin:.4rem 0;}
+  .order select{font:inherit; margin-right:.6rem; padding:.35rem; border:1px solid var(--rule); border-radius:5px; background:#fff;}
+  .order .label{margin-right:.6rem;}
+  .order .mark{display:inline-block; width:1.4rem; text-align:center; font-weight:700;}
+  .checkbtn{font:inherit; margin-top:.6rem; padding:.5rem 1rem; border:1px solid var(--accent);
+    background:var(--accent); color:#fff; border-radius:6px; cursor:pointer;}
+  .score{font-weight:600; margin-top:.4rem;}
+  .callout{background:#eef3ee; border:1px solid #cfe0d0; border-radius:8px; padding:.9rem 1.1rem; margin:1.5rem 0;}
+  .callout b{color:var(--good);}
+  footer{margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.88rem;}
+  a{color:var(--accent);}
+  sup a{text-decoration:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p style="margin:0 0 1.2rem"><a href="../index.html">&larr; Összes lecke</a></p>
+  <p class="eyebrow">Lecke 0003 · Magyar történelem</p>
+  <h1>A csúcspont</h1>
+  <p class="lede">Négy és fél évszázaddal István után a középkori királyság eléri a tetőpontját:
+  egy művelt, európai hírű reneszánsz király ül Buda trónján. A neve <b>Hunyadi Mátyás</b> —
+  és a halálával kezdődik a lejtő, ami Mohácshoz vezet.</p>
+
+  <div class="recall">
+    <p class="stem">Előbb egy gyors visszakérdezés (0002-ből)</p>
+    <p>Ki tette a kalandozó magyarokból keresztény európai királyságot, és nagyjából mikor?
+    Mondd ki, mielőtt megnézed.</p>
+    <details>
+      <summary>Mutasd a választ</summary>
+      <p style="margin:.5rem 0 0"><b>Szent István</b>, ~<b>1000</b> körül. (A nagy elágazás:
+      <b>Koppány kontra István</b> — pogány múlt vs. keresztény Nyugat.) A mai lecke fél
+      évezreddel később játszódik, ugyanennek a királyságnak a fénykorában.</p>
+    </details>
+  </div>
+
+  <h2>Mi történt István és Mátyás között? — a hézag egy percben</h2>
+  <p>Ne ijedj meg a ~450 évtől, három dolgot kell róla tudni. <b>Egy:</b> az Árpád-ház
+  <b>1301-ben kihal</b> (elfogy a férfiági utód). <b>Kettő:</b> utána „behívott", külföldi
+  származású királyok jönnek — a legnagyobbak az <b>Anjouk</b> (Károly Róbert, Nagy Lajos),
+  alattuk az ország erős és gazdag. <b>Három:</b> közben délről feltűnik egy új, félelmetes
+  szomszéd: az <b>Oszmán (török) Birodalom</b>, amely a Balkánt elnyelve Magyarország határát
+  fenyegeti. Ez a fenyegetés szüli a lecke hőseit.</p>
+
+  <h2>A két Hunyadi — két jelenet</h2>
+
+  <h3>1 · Az apa: Hunyadi János, a törökverő</h3>
+  <p class="span">15. század közepe · a déli harangszó</p>
+  <p>Hunyadi János nem királyfi volt, hanem tehetséges hadvezér, aki a török elleni harcban
+  emelkedett fel az ország első emberévé (kormányzó). Legnagyobb tette a <b>nándorfehérvári
+  diadal</b> (1456): megvédi a déli végvárat a hatalmas török sereggel szemben. A győzelem
+  emlékére rendelte el a pápa a déli harangszót — máig minden délben ezért szólnak a harangok
+  szerte a keresztény világban.</p>
+  <div class="story"><b>A kapaszkodó:</b> a <b>déli harangszó</b> = Hunyadi János
+  nándorfehérvári győzelme (1456). Ezt bárhol elsütheted, és pontos.</div>
+
+  <h3>2 · A fiú: Mátyás, a reneszánsz király</h3>
+  <p class="span">~1458 – 1490 · a fénykor</p>
+  <p>János fiát, <b>Mátyást</b> 1458-ban választják királlyá — fiatalon, némileg meglepetésre.
+  Erős központi hatalmat épít, megzabolázza a hatalmaskodó főurakat, és felállítja a
+  <b>fekete sereget</b>: Európa egyik első állandó zsoldoshadseregét. Ezzel még <b>Bécset</b>
+  is elfoglalja (1485), és oda teszi át székhelyét.</p>
+  <p>De nemcsak katona: művelt reneszánsz uralkodó. Itáliai feleségével (Beatrix) behozza a
+  reneszánszt Budára és Visegrádra; híres könyvtára, a <b>Bibliotheca Corviniana</b> a kor egyik
+  legnagyobb gyűjteménye. A nép emlékezetében pedig <b>„Igazságos Mátyás"</b> maradt meg, aki
+  állítólag álruhában járt az alattvalói közt, hogy igazságot tegyen.</p>
+  <div class="story"><b>A kapaszkodó — ezt vidd magaddal:</b> Mátyás = a középkori királyság
+  utolsó nagy csúcspontja. Erős sereg + ragyogó reneszánsz udvar. A halála (1490) után minden
+  hanyatlani kezd — ezért mondják: <b>„Meghalt Mátyás, oda az igazság."</b></div>
+
+  <h2>Miért számít ez egy beszélgetésben?</h2>
+  <p>Ha elhangzik <b>„Mátyás király", „fekete sereg", „Corvina", „déli harangszó"</b> vagy
+  <b>„Igazságos Mátyás"</b> — most már mind a helyén van a fejedben. A lényeg egy mondatban:
+  <i>Mátyás (~1458–1490) a középkori Magyarország fénykora; az apja, Hunyadi János nyerte
+  a nándorfehérvári csatát a török ellen (1456).</i></p>
+
+  <h2>Próbáld ki — kvíz</h2>
+  <p>Ne lapozz vissza. A küzdés a memóriáddal pont az, amitől megmarad. Azonnali visszajelzést
+  kapsz minden válaszra.</p>
+
+  <div class="quiz">
+    <div class="q" data-correct="2">
+      <p class="stem">1. Ki tette Magyarországot keresztény királysággá? (0002)</p>
+      <div class="opts">
+        <button>Hunyadi Mátyás</button>
+        <button>Hunyadi János</button>
+        <button>Szent István</button>
+        <button>Árpád fejedelem</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="1">
+      <p class="stem">2. Ki volt Mátyás híres törökverő apja?</p>
+      <div class="opts">
+        <button>Luxemburgi Zsigmond</button>
+        <button>Hunyadi János</button>
+        <button>Károly Róbert</button>
+        <button>Szent László</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="0">
+      <p class="stem">3. Mi volt a Bibliotheca Corviniana?</p>
+      <div class="opts">
+        <button>Mátyás híres könyvtára</button>
+        <button>Mátyás zsoldos hadserege</button>
+        <button>Egy ostromlott végvár</button>
+        <button>Egy itáliai festő</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+
+    <div class="q" data-correct="3">
+      <p class="stem">4. Melyik csatavesztés zárja le hamarosan az 1. korszakot? (0001)</p>
+      <div class="opts">
+        <button>A nándorfehérvári diadal</button>
+        <button>Az augsburgi vereség</button>
+        <button>A trianoni szerződés</button>
+        <button>A mohácsi csatavesztés</button>
+      </div>
+      <p class="fb"></p>
+    </div>
+  </div>
+
+  <h3>Tedd helyes sorrendbe</h3>
+  <p>Állítsd időrendbe az eseményeket (1 = legrégebbi):</p>
+  <div class="order" id="order">
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="A"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <span class="label">Hunyadi János nándorfehérvári diadala</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="B"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <span class="label">Szent István megkoronázása (~1000)</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="C"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <span class="label">Mátyás trónra lép, kezdődik a fénykor</span></div>
+    <div class="slot"><span class="mark"></span>
+      <select data-pos="D"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      <span class="label">Az Árpád-ház kihalása (1301)</span></div>
+  </div>
+  <button class="checkbtn" id="checkorder">Ellenőrzés</button>
+  <p class="score" id="orderscore"></p>
+
+  <div class="callout">
+    <b>Egy kérdés, amin érdemes elgondolkodni:</b> Mátyás óriási, modern sereget és ragyogó
+    udvart épített — mégis alig három évtizeddel a halála után az ország összeomlik Mohácsnál.
+    Vajon a fénykor egy ember tehetségén állt vagy bukott, és tartós intézmények nélkül a csúcs
+    eleve törékeny volt? Erről jó vitázni — kérdezz nyugodtan tőlem, a tanárodtól!
+  </div>
+
+  <h2>Olvasnivaló — egy elsődleges forrás</h2>
+  <p>A Mátyás-korhoz változatlanul <b>Romsics Ignác: <i>Magyarország története</i></b> a teljes
+  ívet adó belépő (<a href="https://moly.hu/konyvek/romsics-ignac-szerk-magyarorszag-tortenete">adatlap</a>).
+  Rövid online olvasáshoz a <a href="https://rubicon.hu/hu/korszakok">Rubicon Online —
+  Korszakok</a> Mátyás- és Hunyadi-anyagai ajánlottak.</p>
+
+  <footer>
+    Kapcsolódó: <a href="../reference/idovonal.html">Referencia — A magyar történelem nagy íve</a>
+    (ide térj vissza, ha elveszítenéd a fonalat).<br>
+    Források: Romsics Ignác, <i>Magyarország története</i>;
+    <a href="https://rubicon.hu/hu/korszakok">Rubicon Online</a>. Az évszámok kerekítettek.<br>
+    <b>Akadt kérdésed?</b> Én vagyok a tanárod — kérdezz bármit, ami nem világos. A következő
+    leckében jön a nagy törés: <b>Mohács (1526)</b> és az ország három részre szakadása —
+    átlépünk az 1. korszakból a 2.-ba.
+  </footer>
+</div>
+
+<script>
+  // Feleletválasztós
+  document.querySelectorAll('.q').forEach(function(q){
+    var correct = +q.dataset.correct;
+    var btns = q.querySelectorAll('.opts button');
+    var fb = q.querySelector('.fb');
+    btns.forEach(function(b,i){
+      b.addEventListener('click', function(){
+        if(q.dataset.done) return;
+        q.dataset.done = "1";
+        btns[correct].classList.add('correct');
+        if(i===correct){ fb.textContent = "Pontosan! ✓"; fb.className = "fb ok"; }
+        else { b.classList.add('wrong'); fb.textContent = "Nem ez — a kiemelt válasz a helyes."; fb.className = "fb no"; }
+      });
+    });
+  });
+
+  // Sorrend: helyes = A3 (Nándorfehérvár) B1 (István) C4 (Mátyás trónra lép) D2 (Árpád-ház kihal)
+  var KEY = {A:"3",B:"1",C:"4",D:"2"};
+  document.getElementById('checkorder').addEventListener('click', function(){
+    var sels = document.querySelectorAll('#order select');
+    var ok=0, total=sels.length;
+    sels.forEach(function(s){
+      var slot = s.closest('.slot'); var mark = slot.querySelector('.mark');
+      if(s.value === KEY[s.dataset.pos]){ ok++; mark.textContent="✓"; mark.style.color="#2f6b3a"; }
+      else { mark.textContent="✗"; mark.style.color="#9a2b2b"; }
+    });
+    var el = document.getElementById('orderscore');
+    el.textContent = ok+" / "+total + (ok===total ? " — tökéletes sorrend! 🎉" : " — nézd meg a ✗-eket és próbáld újra.");
+    el.style.color = ok===total ? "#2f6b3a" : "#7a2e1d";
+  });
+</script>
+</body>
+</html>
