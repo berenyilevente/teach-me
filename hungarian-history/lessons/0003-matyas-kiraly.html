@@ -212,37 +212,5 @@
   </footer>
 </div>
 
-<script>
-  // Feleletválasztós
-  document.querySelectorAll('.q').forEach(function(q){
-    var correct = +q.dataset.correct;
-    var btns = q.querySelectorAll('.opts button');
-    var fb = q.querySelector('.fb');
-    btns.forEach(function(b,i){
-      b.addEventListener('click', function(){
-        if(q.dataset.done) return;
-        q.dataset.done = "1";
-        btns[correct].classList.add('correct');
-        if(i===correct){ fb.textContent = "Pontosan! ✓"; fb.className = "fb ok"; }
-        else { b.classList.add('wrong'); fb.textContent = "Nem ez — a kiemelt válasz a helyes."; fb.className = "fb no"; }
-      });
-    });
-  });
-
-  // Sorrend: helyes = A3 (Nándorfehérvár) B1 (István) C4 (Mátyás trónra lép) D2 (Árpád-ház kihal)
-  var KEY = {A:"3",B:"1",C:"4",D:"2"};
-  document.getElementById('checkorder').addEventListener('click', function(){
-    var sels = document.querySelectorAll('#order select');
-    var ok=0, total=sels.length;
-    sels.forEach(function(s){
-      var slot = s.closest('.slot'); var mark = slot.querySelector('.mark');
-      if(s.value === KEY[s.dataset.pos]){ ok++; mark.textContent="✓"; mark.style.color="#2f6b3a"; }
-      else { mark.textContent="✗"; mark.style.color="#9a2b2b"; }
-    });
-    var el = document.getElementById('orderscore');
-    el.textContent = ok+" / "+total + (ok===total ? " — tökéletes sorrend! 🎉" : " — nézd meg a ✗-eket és próbáld újra.");
-    el.style.color = ok===total ? "#2f6b3a" : "#7a2e1d";
-  });
-</script>
 </body>
 </html>
