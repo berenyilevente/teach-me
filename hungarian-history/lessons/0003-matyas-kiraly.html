@@ -35,25 +35,11 @@
   .quiz{margin:1rem 0 0;}
   .q{border:1px solid var(--rule); border-radius:8px; padding:1rem 1.1rem; margin:1rem 0; background:#fff;}
   .q .stem{font-weight:600; margin:0 0 .7rem;}
-  .opts{margin:.45rem 0;}
-  .opts button{
-    display:block; width:100%; margin:.45rem 0;
-    font:inherit; text-align:left; padding:.55rem .8rem; border:1px solid var(--rule);
-    background:var(--paper); border-radius:6px; cursor:pointer;
-  }
-  .opts button:hover{border-color:var(--accent);}
-  .opts button.correct{background:#e7f1e8; border-color:var(--good); color:var(--good);}
-  .opts button.wrong{background:#f6e7e7; border-color:var(--bad); color:var(--bad);}
-  .fb{margin:.6rem 0 0; font-size:.92rem; min-height:1.2em;}
-  .fb.ok{color:var(--good);} .fb.no{color:var(--bad);}
-  .order{margin:.5rem 0;}
-  .order .slot{margin:.4rem 0;}
-  .order select{font:inherit; margin-right:.6rem; padding:.35rem; border:1px solid var(--rule); border-radius:5px; background:#fff;}
-  .order .label{margin-right:.6rem;}
-  .order .mark{display:inline-block; width:1.4rem; text-align:center; font-weight:700;}
-  .checkbtn{font:inherit; margin-top:.6rem; padding:.5rem 1rem; border:1px solid var(--accent);
-    background:var(--accent); color:#fff; border-radius:6px; cursor:pointer;}
-  .score{font-weight:600; margin-top:.4rem;}
+  .opts{margin:.5rem 0; padding-left:1.4rem;}
+  .opts li{margin:.3rem 0;}
+  details.answer{margin:.6rem 0 0;}
+  details.answer summary{cursor:pointer; color:var(--accent); font-weight:600;}
+  details.answer p, details.answer ol{margin:.5rem 0 0;}
   .callout{background:#eef3ee; border:1px solid #cfe0d0; border-radius:8px; padding:.9rem 1.1rem; margin:1.5rem 0;}
   .callout b{color:var(--good);}
   footer{margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.88rem;}
