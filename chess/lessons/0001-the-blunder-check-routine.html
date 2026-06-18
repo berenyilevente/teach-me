@@ -121,45 +121,70 @@
   </ul>
 
   <h2>Now retrieve it — quick quiz</h2>
-  <p>Don't peek above. Pulling the answer from memory is what makes it stick. Score: <span class="score" id="score">0 / 4</span></p>
+  <p>Don't peek above. Pick each answer in your head, then reveal it to check —
+  pulling the answer from memory is what makes it stick.</p>
 
-  <div class="q" data-correct="0">
+  <div class="q">
     <p class="stem">1. How often should you run the blunder-check?</p>
-    <button class="opt">Before every move you make</button>
-    <button class="opt">Only when you sense danger</button>
-    <button class="opt">Once you reach a middlegame</button>
-    <button class="opt">After you lose a piece</button>
-    <p class="fb"></p>
+    <ul class="opts">
+      <li>Before every move you make</li>
+      <li>Only when you sense danger</li>
+      <li>Once you reach a middlegame</li>
+      <li>After you lose a piece</li>
+    </ul>
+    <details class="answer">
+      <summary>Show answer</summary>
+      <p>Correct: <b>Before every move you make</b> — that's the habit. The whole point is the
+      fixed loop you run on autopilot moves too, not just the scary ones.</p>
+    </details>
   </div>
 
-  <div class="q" data-correct="0">
+  <div class="q">
     <p class="stem">2. You want to play your bishop to c4. Black has a pawn on b5 that attacks c4,
       and nothing of yours defends c4. Is Bc4 safe?</p>
-    <button class="opt">No — the pawn wins it</button>
-    <button class="opt">Yes — bishops belong there</button>
-    <button class="opt">No — it allows a check</button>
-    <button class="opt">Yes — nothing can capture</button>
-    <p class="fb"></p>
+    <ul class="opts">
+      <li>No — the pawn wins it</li>
+      <li>Yes — bishops belong there</li>
+      <li>No — it allows a check</li>
+      <li>Yes — nothing can capture</li>
+    </ul>
+    <details class="answer">
+      <summary>Show answer</summary>
+      <p>Correct: <b>No — the pawn wins it</b>. Step 2 (is my move safe?) catches it: the piece
+      lands on a square it can be taken on for free.</p>
+    </details>
   </div>
 
-  <div class="q" data-correct="2">
+  <div class="q">
     <p class="stem">3. Your opponent just moved. Which check do you run <em>first</em>, before
       choosing your own plan?</p>
-    <button class="opt">Find my best development</button>
-    <button class="opt">Decide where to castle</button>
-    <button class="opt">What did that move threaten</button>
-    <button class="opt">Plan my own pawn breaks</button>
-    <p class="fb"></p>
+    <ul class="opts">
+      <li>Find my best development</li>
+      <li>Decide where to castle</li>
+      <li>What did that move threaten</li>
+      <li>Plan my own pawn breaks</li>
+    </ul>
+    <details class="answer">
+      <summary>Show answer</summary>
+      <p>Correct: <b>What did that move threaten</b>. Step 1 always looks at their side of the
+      board first — most missed captures are missed because we never looked.</p>
+    </details>
   </div>
 
-  <div class="q" data-correct="1">
+  <div class="q">
     <p class="stem">4. Step 4 says "my turn to attack." Your opponent left a rook on a square your
       bishop attacks, defended by nothing. You should:</p>
-    <button class="opt">Keep calmly developing pieces</button>
-    <button class="opt">Capture the undefended rook</button>
-    <button class="opt">Castle your king to safety</button>
-    <button class="opt">Offer a quiet piece trade</button>
-    <p class="fb"></p>
+    <ul class="opts">
+      <li>Keep calmly developing pieces</li>
+      <li>Capture the undefended rook</li>
+      <li>Castle your king to safety</li>
+      <li>Offer a quiet piece trade</li>
+    </ul>
+    <details class="answer">
+      <summary>Show answer</summary>
+      <p>Correct: <b>Capture the undefended rook</b>. Step 4 says don't just be safe — grab what
+      they left hanging.</p>
+    </details>
   </div>
 
   <div class="src">
