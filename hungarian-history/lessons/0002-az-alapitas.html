@@ -114,69 +114,80 @@
   kapsz minden válaszra.</p>
 
   <div class="quiz">
-    <div class="q" data-correct="1">
+    <div class="q">
       <p class="stem">1. Ki vezette a honfoglaló magyar törzseket?</p>
-      <div class="opts">
-        <button>István király</button>
-        <button>Árpád fejedelem</button>
-        <button>Koppány vezér</button>
-        <button>Géza fejedelem</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>István király</li>
+        <li>Árpád fejedelem</li>
+        <li>Koppány vezér</li>
+        <li>Géza fejedelem</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Árpád fejedelem</b> — ő vezette a hét törzset a Kárpát-medencébe.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="2">
+    <div class="q">
       <p class="stem">2. Nagyjából mikor koronázták királlyá I. Istvánt?</p>
-      <div class="opts">
-        <button>895 körül</button>
-        <button>955 körül</button>
-        <button>1000 körül</button>
-        <button>1526 körül</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>895 körül</li>
+        <li>955 körül</li>
+        <li>1000 körül</li>
+        <li>1526 körül</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>1000 körül</b>.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="0">
+    <div class="q">
       <p class="stem">3. Mi volt a tét Koppány és István összecsapásában?</p>
-      <div class="opts">
-        <button>Pogány vagy keresztény ország</button>
-        <button>Magyar vagy német uralom</button>
-        <button>Béke vagy újabb háború</button>
-        <button>Király vagy köztársaság ügye</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Pogány vagy keresztény ország</li>
+        <li>Magyar vagy német uralom</li>
+        <li>Béke vagy újabb háború</li>
+        <li>Király vagy köztársaság ügye</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>Pogány vagy keresztény ország</b> — a régi rend vs. a nyugati jövő.</p>
+      </details>
     </div>
 
-    <div class="q" data-correct="3">
+    <div class="q">
       <p class="stem">4. Melyik nagy korszakba tartozik az államalapítás?</p>
-      <div class="opts">
-        <button>Az Osztrák–Magyar Monarchia</button>
-        <button>A három részre szakadás</button>
-        <button>A „rövid 20. század"</button>
-        <button>A Középkori Magyar Királyság</button>
-      </div>
-      <p class="fb"></p>
+      <ul class="opts">
+        <li>Az Osztrák–Magyar Monarchia</li>
+        <li>A három részre szakadás</li>
+        <li>A „rövid 20. század"</li>
+        <li>A Középkori Magyar Királyság</li>
+      </ul>
+      <details class="answer">
+        <summary>Mutasd a választ</summary>
+        <p>A helyes válasz: <b>A Középkori Magyar Királyság</b> (az 1. korszak).</p>
+      </details>
     </div>
   </div>
 
   <h3>Tedd helyes sorrendbe</h3>
-  <p>Állítsd időrendbe az alapítás eseményeit (1 = legrégebbi):</p>
-  <div class="order" id="order">
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="A"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Géza békét köt a Nyugattal és megkeresztelkedik</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="B"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Honfoglalás — Árpád és a hét törzs megérkezik</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="C"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">István megkoronázása — megszületik az állam</span></div>
-    <div class="slot"><span class="mark"></span>
-      <select data-pos="D"><option value="">– hányadik? –</option><option>1</option><option>2</option><option>3</option><option>4</option></select>
-      <span class="label">Az augsburgi vereség — vége a kalandozásoknak</span></div>
-  </div>
-  <button class="checkbtn" id="checkorder">Ellenőrzés</button>
-  <p class="score" id="orderscore"></p>
+  <p>Próbáld fejből időrendbe rakni az alapítás eseményeit (1 = legrégebbi), aztán ellenőrizd:</p>
+  <ul class="opts">
+    <li>Géza békét köt a Nyugattal és megkeresztelkedik</li>
+    <li>Honfoglalás — Árpád és a hét törzs megérkezik</li>
+    <li>István megkoronázása — megszületik az állam</li>
+    <li>Az augsburgi vereség — vége a kalandozásoknak</li>
+  </ul>
+  <details class="answer">
+    <summary>Mutasd a helyes sorrendet</summary>
+    <ol>
+      <li>Honfoglalás — Árpád és a hét törzs megérkezik (~895)</li>
+      <li>Az augsburgi vereség — vége a kalandozásoknak (955)</li>
+      <li>Géza békét köt a Nyugattal és megkeresztelkedik (~970)</li>
+      <li>István megkoronázása — megszületik az állam (~1000)</li>
+    </ol>
+  </details>
 
   <div class="callout">
     <b>Egy kérdés, amin érdemes elgondolkodni:</b> Koppánynak igaza is lehetett volna — sok
