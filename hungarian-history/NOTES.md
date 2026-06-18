@@ -23,5 +23,6 @@
 ## Ötletek a következő leckékhez
 - ✅ 0002 KÉSZ: Honfoglalás + államalapítás (Árpád, Szent István) — az "alapítás" sztorija.
 - ✅ 0003 KÉSZ: Hunyadi János + Mátyás — a középkori reneszánsz csúcspont.
-- 0004 (terv): Mohács (1526) és a három részre szakadás (1. korszak vége → 2.).
+- ✅ 0004 KÉSZ: Mohács (1526) és a három részre szakadás (1. korszak vége → 2.).
+- 0005 (terv): A török kiűzése (1686) és a Habsburg-kor — Rákóczi-szabadságharc.
 - Később: 1848; kiegyezés; Trianon; 1956; rendszerváltás.
